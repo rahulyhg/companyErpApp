@@ -1,0 +1,627 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"course_",
+				"course_id"
+			],
+			[
+				"opt",
+				"option	Tag"
+			],
+			[
+				"op",
+				"option	Tag"
+			],
+			[
+				"is",
+				"isset"
+			],
+			[
+				"fe",
+				"feedback"
+			],
+			[
+				"bus_stand",
+				"bus_stand"
+			],
+			[
+				"colla",
+				"collage"
+			],
+			[
+				"col",
+				"collage"
+			],
+			[
+				"pas",
+				"password"
+			],
+			[
+				"th",
+				"throw	Throw Exception"
+			],
+			[
+				"this",
+				"this"
+			],
+			[
+				"success",
+				"successMessage"
+			],
+			[
+				"E",
+				"Exampaper"
+			],
+			[
+				"add",
+				"addCol"
+			],
+			[
+				"ex",
+				"explode"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"func_",
+				"func_get_args"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"_",
+				"_sort"
+			],
+			[
+				"array_re",
+				"array_replace"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"ta",
+				"tab1"
+			],
+			[
+				"member",
+				"member_type"
+			],
+			[
+				"M",
+				"MemberType"
+			],
+			[
+				"g",
+				"grid"
+			],
+			[
+				"t",
+				"tab1"
+			],
+			[
+				"is_a",
+				"is_active"
+			],
+			[
+				"joi",
+				"joining_date"
+			],
+			[
+				"mo",
+				"mobile_no"
+			],
+			[
+				"cli",
+				"click_action"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"currnt",
+				"current_row"
+			],
+			[
+				"l",
+				"leavetype_tabs"
+			],
+			[
+				"Cr",
+				"curd"
+			],
+			[
+				"jo",
+				"joining_date"
+			],
+			[
+				"he",
+				"height	Attr"
+			],
+			[
+				"tab",
+				"tab1"
+			],
+			[
+				"FR",
+				"frame"
+			],
+			[
+				"ser",
+				"services"
+			],
+			[
+				"F",
+				"Features"
+			],
+			[
+				"Company",
+				"companyprofile"
+			],
+			[
+				"prob",
+				"problem_description"
+			],
+			[
+				"cou",
+				"country"
+			],
+			[
+				"re",
+				"registration"
+			],
+			[
+				"Form",
+				"FORM"
+			],
+			[
+				"pi",
+				"pincode"
+			],
+			[
+				"State",
+				"state"
+			],
+			[
+				"e",
+				"emergency"
+			],
+			[
+				"eme",
+				"emergencytype_tab"
+			],
+			[
+				"em",
+				"emergency_service"
+			],
+			[
+				"Emergency",
+				"Model_Emergency_EmergencyService"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"Snippet: ",
+				"Snippet: html"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/var/www/quiz/config-default.php",
+		"/var/www/quiz/lib/Frontend.php",
+		"/var/www/quiz/lib/Model/Faculty.php",
+		"/var/www/quiz/lib/Model/Exam.php",
+		"/var/www/quiz/lib/Model/Question.php",
+		"/var/www/quiz/lib/Model/Unit.php",
+		"/var/www/quiz/lib/Model/Subject.php",
+		"/var/www/quiz/lib/Model/Course.php",
+		"/var/www/companyErpApp/config-default.php",
+		"/var/www/companyErpApp/epan-components/companyERP/page/owner/main.php",
+		"/var/www/companyErpApp/epan-components/companyERP/page/install.php",
+		"/var/www/companyErpApp/epan-components/companyERP/page/uninstall.php",
+		"/var/www/myproject/lib/Model/Customer.php",
+		"/var/www/myproject/lib/Model/Project.php",
+		"/var/www/myproject/lib/Model/Staff.php",
+		"/var/www/myproject/page/staff.php",
+		"/var/www/myproject/page/project.php",
+		"/var/www/cr1/lib/Model/ComplaintsType.php",
+		"/var/www/cr1/lib/xavoc/loader.php",
+		"/var/www/cr1/page/index.php",
+		"/var/www/cr1/page/t.php",
+		"/var/www/cr1/page/customer.php",
+		"/var/www/cr1/lib/DBTable.php",
+		"/var/www/cr1/page/menu.php",
+		"/var/www/cr1/page/report.php",
+		"/var/www/cr1/page/complaints.php",
+		"/var/www/cr1/page/status.php",
+		"/var/www/cr1/index.php",
+		"/var/www/cr1/lib/DB.php",
+		"/var/www/priyanka/area.php",
+		"/var/www/project8/lib/Model/User.php",
+		"/var/www/project8/page/registration.php",
+		"/var/www/project8/lib/Model/Examquestion.php",
+		"/var/www/project8/page/user.php",
+		"/var/www/project8/page/master.php",
+		"/var/www/school1/lib/Lister/MyLister.php",
+		"/var/www/project8/config-default.php",
+		"/var/www/project8/lib/Lister/MyLister.php",
+		"/var/www/priyanka/as.php",
+		"/var/www/priyanka/arev.php",
+		"/var/www/priyanka/aran.php",
+		"/var/www/priyanka/arpu.php",
+		"/var/www/priyanka/apr.php",
+		"/var/www/priyanka/ap.php.html",
+		"/var/www/priyanka/ari.php",
+		"/var/www/priyanka/ak.php",
+		"/var/www/priyanka/arf.php",
+		"/var/www/priyanka/af.php",
+		"/var/www/priyanka/ark.php",
+		"/var/www/priyanka/ardf.php",
+		"/var/www/priyanka/arct.php",
+		"/var/www/project8/lib/Frontend.php",
+		"/var/www/project8/lib/Model/Exam.php",
+		"/var/www/project8/lib/Model/Student.php",
+		"/var/www/project8/lib/Model/Examstudent.php",
+		"/var/www/priyanka/asearch.php",
+		"/var/www/priyanka/areverse.php",
+		"/var/www/priyanka/isarray.php",
+		"/var/www/priyanka/merge.php",
+		"/var/www/priyanka/table.php",
+		"/var/www/priyanka/balance.php",
+		"/var/www/priyanka/sum.php",
+		"/var/www/priyanka/for2.php",
+		"/var/www/priyanka/for1.php",
+		"/var/www/priyanka/test5.php",
+		"/var/www/priyanka/test2.php",
+		"/var/www/priyanka/test4.php",
+		"/var/www/priyanka/test3.php",
+		"/var/www/priyanka/test1.php",
+		"/var/www/priyanka/test.php",
+		"/var/www/office/page/test.php",
+		"/var/www/office/page/index.php",
+		"/var/www/school1/lib/Model/Faculty.php",
+		"/var/www/school1/lib/Model/Course.php",
+		"/var/www/school1/lib/Model/ExampaperQuestion.php",
+		"/var/www/school1/lib/Model/Exampaper.php",
+		"/var/www/school1/lib/Model/Exam.php",
+		"/var/www/school1/lib/Model/Question.php",
+		"/var/www/school1/lib/Model/Unit.php",
+		"/var/www/school1/page/subject.php",
+		"/var/www/school1/lib/Model/Subject.php",
+		"/var/www/school1/page/faculty.php",
+		"/var/www/school1/page/question.php",
+		"/var/www/school1/page/master.php",
+		"/var/www/school1/page/course.php",
+		"/var/www/school1/page/index.php",
+		"/var/www/school1/config-default.php",
+		"/var/www/school1/page/unit.php",
+		"/var/www/course2/page/index.php",
+		"/var/www/course2/config-default.php",
+		"/var/www/course/config-default.php",
+		"/var/www/course2/config-distrib.php",
+		"/var/www/course2/lib/Frontend.php",
+		"/var/www/course2/lib/Model/Course.php",
+		"/var/www/Demo/atk4-addons/dynamic_model/lib/Controller/AutoCreator.php",
+		"/var/www/Demo/lib/Model/Hotel.php",
+		"/var/www/Demo/page/hotel.php",
+		"/var/www/course/page/addcompany.php",
+		"/var/www/Demo/page/addcity.php",
+		"/var/www/Demo/page/form.php",
+		"/var/www/Demo/lib/Model/City.php",
+		"/var/www/Demo/page/city.php",
+		"/var/www/course/page/resume.php",
+		"/var/www/course/page/addresume.php",
+		"/var/www/course/page/company.php",
+		"/var/www/course/lib/Model/Resume.php",
+		"/var/www/billing/lib/Model/Item.php",
+		"/var/www/billing/page/index.php",
+		"/var/www/billing/lib/Model/Customer.php",
+		"/var/www/billing/lib/Model/Party.php",
+		"/var/www/billing/lib/Model/Purchase.php",
+		"/var/www/billing/lib/Model/Sales.php",
+		"/var/www/billing/config-default.php",
+		"/var/www/billing/lib/Frontend.php",
+		"/var/www/billing/index.php",
+		"/var/www/course/lib/Model/Company.php",
+		"/var/www/course/lib/Model/Course1.php",
+		"/var/www/course/lib/Frontend.php",
+		"/var/www/newprj/lib/Model/Customer.php",
+		"/var/www/newprj/lib/Model/LoginDetails.php",
+		"/var/www/newprj/page/index.php",
+		"/var/www/newprj/config-default.php",
+		"/var/www/newprj/lib/Frontend.php",
+		"/var/www/billing/page/bill2.php",
+		"/var/www/billing/lib/Model/Category.php",
+		"/var/www/billing/page/bill.php",
+		"/var/www/billing/page/bill3.php",
+		"/var/www/billing/page/bill4.php"
+	],
+	"find":
+	{
+		"height": 40.0
+	},
+	"find_in_files":
+	{
+		"height": 108.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"');\n",
+			"work_exprience_traning_field",
+			"setModel",
+			"winserver",
+			"warr",
+			"$this->add('H5')->set('Write following code to add Toggle Button:');\n		$this->add('P')->setHtml(\"$\".\"btn1=$\".\"this->add('Button')->set('Click Me');  //This will add a button labled as 'Click me'\");\n		$this->add('P')->setHtml(\"$\".\"btn1->js('click',$\".\"v1->js()->toggle());  //This will add java script to toggle on button object 'btn1' \");\n\n		$this->add('H5')->set('Output:');\n		$btn1=$this->add('Button')->set('Toggle');\n		$v1=$this->add('View_Info')->set(\"This is Info. This will toggle when clicked on button 'Toggle'\");\n		$btn1->js('click',$v1->js()->toggle());\n		\n\n",
+			"\n		$col=$this->add('Columns');\n		$col1=$col->addColumn(5);",
+			"		$col=$this->add('Columns');\n		$col1=$col->addColumn(5);",
+			"history",
+			"ga",
+			"		\n",
+			"Model_ProductAllow_Core",
+			"');\n",
+			"tog",
+			"add",
+			"        &",
+			"}\n",
+			" $col1->add('H5')->set('atk4');\n        $col2->add('H5')->set('This folder contains predefined(base) Classes.');\n        ",
+			"|",
+			"beforeDelete",
+			"array",
+			"br",
+			" $",
+			"					<",
+			"input",
+			"					<",
+			"echo",
+			"br",
+			"Randum",
+			"left",
+			"hint",
+			"  ",
+			"over",
+			"shi",
+			"img",
+			"col-sm-4",
+			"');\n",
+			"}\n",
+			"page_base_admin",
+			"  $crud=$this->add('CRUD');\n		$crud->setModel('Attendance');\n",
+			"');\n",
+			" >",
+			"\" ",
+			" >",
+			"cont",
+			"<div class=\"span8\">",
+			"();\n",
+			"div",
+			"buisness_listing_labal",
+			"%\");",
+			"Code",
+			"ad5b76",
+			"City",
+			"addtabURl"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"$col1->add('H5')->setHtml('<pre>&lt;?php\n        class page_index extends Page {\n            function init(){\n                parent::init();\n                #Start your code here\n        }\n?&gt;\n            </pre>');\n        ",
+			" "
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 38.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"project": "atk4.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"udai",
+				"udaipur.php"
+			],
+			[
+				"home",
+				"home.php"
+			],
+			[
+				"pagerepor",
+				"atkschool/page/store/reports.php"
+			],
+			[
+				"inlin",
+				"testing/atk4-addons/grid/lib/Controller/Grid/Format/inline.php"
+			],
+			[
+				"gridinli",
+				"sb24/atk4-addons/grid/lib/Controller/Grid/Format/inline.php"
+			],
+			[
+				"inline",
+				"sb24/atk4-addons/grid/lib/Controller/Grid/Format/inline.php"
+			],
+			[
+				"abstractobject",
+				"testing/atk4/lib/AbstractObject.php"
+			],
+			[
+				"abstractcontroller",
+				"sb24/atk4/lib/AbstractController.php"
+			],
+			[
+				"inli",
+				"sb24/atk4-addons/grid/lib/Controller/Grid/Format/inline.php"
+			],
+			[
+				"dynamic_model/c",
+				"atk4-addons/dynamic_model/lib/Controller/AutoCreator.php"
+			],
+			[
+				"me",
+				"atk4/lib/Menu.php"
+			],
+			[
+				"",
+				"lib/Menu.php"
+			],
+			[
+				"men",
+				"lib/Menu.php"
+			],
+			[
+				"menu.",
+				"onlineenquiry/atk4/lib/Menu.php"
+			],
+			[
+				"lor",
+				"onlineenquiry/atk4/lib/LoremIpsum.php"
+			],
+			[
+				"fra",
+				"onlineenquiry/atk4/lib/Frame.php"
+			],
+			[
+				"gridinl",
+				"atk4-addons/grid/lib/Controller/Grid/Format/inline.php"
+			],
+			[
+				"confi",
+				"atk4/tests/config-default.php"
+			],
+			[
+				"con",
+				"atk4/lib/Exception/NotConfigured.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"bii",
+				"~/Desktop/sublime-project/billing.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 172.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
