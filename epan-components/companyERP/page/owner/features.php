@@ -5,7 +5,7 @@ class page_companyERP_page_owner_features extends page_companyERP_page_owner_mai
 		parent::init();
 
 	$crud=$this->add('CRUD');
-	$crud->setModel('companyERP_Master_Features'); 
+	$crud->setModel('companyERP/Master_Features'); 
 
 	}
 }

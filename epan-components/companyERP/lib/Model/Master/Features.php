@@ -3,14 +3,21 @@ namespace companyERP;
 
 class Model_Master_Features extends \Model_Table
 {
-	public $table="companyERP_Features";
+	public $table="companyERP_features";
 	function init()
 	{
 		parent::init();
 		$this->hasOne('companyERP/Master_Product','product_id');
 		$this->addField('name');
 		$this->add('dynamic_model/Controller_AutoCreator');
+
 		$this->addHook('beforeSave',$this);
+	}
+
+	function beforeSave()
+	{
+
+		
 	}
 
 }

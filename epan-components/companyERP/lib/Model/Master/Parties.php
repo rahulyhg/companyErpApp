@@ -1,11 +1,13 @@
 <?php
-class Model_Master_Parties extends Model_Table
+namespace companyERP;
+class Model_Master_Parties extends \Model_Table
 {
-	public $table="parties";
+	public $table="companyERP_parties";
 	function init()
 	{
 		parent::init();
 		$this->addField('name');
+		$this->has
 		$this->add('dynamic_model/Controller_AutoCreator');
 		//$this->addHook('beforeSave',$this);
 	}

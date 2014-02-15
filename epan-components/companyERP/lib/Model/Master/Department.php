@@ -10,7 +10,6 @@ class Model_Master_Department extends \Model_Table
 		$this->hasOne('companyERP/Master_Branch','branch_id');
 		$this->addField('name');
 
-		$this->hasMany('companyERP/Master_Staff','department_id');
         $this->hasMany('companyERP/Master_Post','department_id');  
 
 		$this->add('dynamic_model/Controller_AutoCreator');
@@ -21,7 +20,7 @@ class Model_Master_Department extends \Model_Table
 	function beforeSave()
 	{
 		$department=$this->add('companyERP/Model_Master_Department');
-		if($this_loaded())
+		if($this->loaded())
 		 {
 			$department->addCondition('id','<>',$this->id);
 		 }
