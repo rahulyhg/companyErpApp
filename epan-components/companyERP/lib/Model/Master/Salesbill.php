@@ -1,24 +1,19 @@
 <?php
 namespace companyERP;
 
-class Model_Master_Bill extends \Model_Table
+class Model_Master_Salesbill extends Master_Bill
 {
-	public $table="companyERP_bill";
+    public $table="companyERP_salesbill";
+
 	function init()
 	{
-		$this->hasOne('companyERP/Master_Parties','parties_id');
+		parent::init();
 
 		$this->addField('name')->mandatory('can not be null');
 
 		$this->add('dynamic_model/Controller_AutoCreator');
 
-		
-
 
 
 	}
-   
-
-
-
 }
