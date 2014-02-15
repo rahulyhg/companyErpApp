@@ -1,10 +1,10 @@
 <?php
-class page_companyErpApp_page_owner_category extends page_companyErpApp_page_owner_main{
+class page_companyERP_page_owner_category extends page_companyERP_page_owner_main{
 	function init()
 	{
 		parent::init();
 	$crud=$this->add('CRUD');
-	$crud->setModel('companyErpApp_Master_Category'); 
+	$crud->setModel('companyERP/Master_Category'); 
 
 	}
 }
