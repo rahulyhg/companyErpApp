@@ -4,8 +4,12 @@ class Model_Master_Company extends \Model_Table{
 	public $table="companyERP_company";
 	function init(){
 		parent::init();
+<<<<<<< HEAD
+		$this->addField('name');
+=======
 		
 		$this->addField('name')->mandatory('can not be null');
+>>>>>>> df614287cee8f798cded06931fa7ab8867233c69
 		$this->hasMany('companyERP/Master_Branch','company_id');
 		$this->hasMany('companyERP/Master_Category','company_id');
 		$this->hasMany('companyERP/Master_Product','company_id');

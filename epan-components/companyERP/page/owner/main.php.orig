@@ -14,7 +14,12 @@ class page_companyERP_page_owner_main extends page_componentBase_page_owner_main
 		$menu->addMenuItem('companyERP_page_owner_features','Features');
 		$menu->addMenuItem('companyERP_page_owner_parties','Parties');
 		$menu->addMenuItem('companyERP_page_owner_order','Order');
+<<<<<<< HEAD
 		$menu->addMenuItem('companyERP_page_owner_transaction','Transaction');
+=======
+		$menu->addMenuItem('companyERP_page_owner_bill','Bill');
+
+>>>>>>> df614287cee8f798cded06931fa7ab8867233c69
 		//$menu->addMenuItem('companyERP_page_owner_sales','Sales');
 		//$menu->addMenuItem('companyERP_page_owner_purchase','Purchase');
 	
