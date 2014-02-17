@@ -4,14 +4,15 @@ class Model_Master_Company extends \Model_Table{
 	public $table="companyERP_company";
 	function init(){
 		parent::init();
-		$this->addField('name')->mandatory('can not be null');
+		$this->addField('name');
 		$this->hasMany('companyERP/Master_Branch','company_id');
 		$this->hasMany('companyERP/Master_Category','company_id');
 		$this->hasMany('companyERP/Master_Product','company_id');
-		$this->hasMany('companyERP/Master_Parties','company_id');
-		$this->add('dynamic_model/Controller_AutoCreator');
+		$this->hasMany('companyERP/Master_Product','company_id');
+		$this->hasMany('companyERP/Master_Transaction','company_id');
 		$this->addHook('beforeSave',$this);
 		$this->addHook('beforeDelete',$this);
+		$this->add('dynamic_model/Controller_AutoCreator');
 	}
 	function beforeSave(){
 		$company=$this->add('companyERP/Model_Master_Company');
@@ -37,6 +38,8 @@ class Model_Master_Company extends \Model_Table{
 	throw $this->exception('plese delete Product contain');
 	if($this->ref('companyERP/Master_Parties')->count()->getOne()>0)
 	throw $this->exception('plese delete Parties contain');
+if($this->ref('companyERP/Master_Transaction')->count()->getOne()>0)
+	throw $this->exception('plese delete transaction contain');
 	
 
 }
