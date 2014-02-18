@@ -9,6 +9,7 @@ class Model_Master_Bill extends \Model_Table
 		$this->hasOne('companyERP/Master_Parties','parties_id');
 
 		$this->addField('name')->mandatory('can not be null');
+		$this->addField('bill_type')->enum(array('Sales','Purchase'));
 
 		$this->add('dynamic_model/Controller_AutoCreator');
 

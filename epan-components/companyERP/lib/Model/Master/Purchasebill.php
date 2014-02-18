@@ -3,7 +3,7 @@ namespace companyERP;
 
 class Model_Master_Purchasebill extends Master_Bill
 {
-    public $table="companyERP_purchasebill";
+    
 
 	function init()
 	{
@@ -11,7 +11,9 @@ class Model_Master_Purchasebill extends Master_Bill
 
 		$this->addField('name')->mandatory('can not be null');
 
-		$this->add('dynamic_model/Controller_AutoCreator');
+
+		$this->addCondition('bill_type','Purchase');
+
 
 
 

@@ -3,8 +3,7 @@ namespace companyERP;
 
 class Model_Master_Billdetail extends Master_Bill
 {
-    public $table="companyERP_billdetail";
-
+   
 	function init()
 	{
 		parent::init();

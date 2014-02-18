@@ -5,6 +5,9 @@ class Model_Master_Paymentreceived extends Model_Master_Transaction{
 	function init(){
 		parent::init();
 
+		$this->addCondition('Transaction_type','paymentreceived');
+
+
 		
 		
 
