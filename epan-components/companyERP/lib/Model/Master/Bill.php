@@ -6,6 +6,7 @@ class Model_Master_Bill extends \Model_Table
 	public $table="companyERP_bill";
 	function init()
 	{
+		parent::init();
 		$this->hasOne('companyERP/Master_Parties','parties_id');
 
 		$this->addField('name')->mandatory('can not be null');

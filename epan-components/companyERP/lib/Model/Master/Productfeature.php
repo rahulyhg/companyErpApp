@@ -1,9 +1,9 @@
 <?php
 namespace companyERP;
 
-class Model_Master_Features extends \Model_Table
+class Model_Master_Productfeature extends \Model_Table
 {
-	public $table="companyERP_features";
+	public $table="companyERP_productfeature";
 	function init()
 	{
 		parent::init();

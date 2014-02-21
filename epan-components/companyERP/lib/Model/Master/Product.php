@@ -16,9 +16,10 @@ class Model_Master_Product extends \Model_Table
 		$this->addField('expire_date');
 		$this->addField('avilability_of_product');
 
-		$this->hasMany('companyERP/Master_Features','product_id');
+		$this->hasMany('companyERP/Master_Product_feature','product_id');
 		$this->hasMany('companyERP/Master_Itemproducts','product_id');
-		
+		$this->hasMany('companyERP/Master_Product_Customer','product_id');
+	
 		$this->add('dynamic_model/Controller_AutoCreator');
 		
 		$this->addHook('beforeSave',$this);
@@ -43,7 +44,7 @@ class Model_Master_Product extends \Model_Table
 
 	function beforeDelete()
 	{
-		if($this->ref('companyERP/Master_Features')->count()->getOne()>0)
+		if($this->ref('companyERP/Master_Product_feature')->count()->getOne()>0)
       {
 	      
       	throw $this->exception('delete feature');

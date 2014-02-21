@@ -11,6 +11,7 @@ class Model_Master_Department extends \Model_Table
 		$this->addField('name');
 
         $this->hasMany('companyERP/Master_Post','department_id');  
+        $this->hasMany('companyERP/Master_Companymember','department_id');  
 
 		$this->add('dynamic_model/Controller_AutoCreator');
 

@@ -1,13 +1,13 @@
 <?php
 namespace companyERP;
-class Model_Master_Parties extends \Model_Table
+class Model_Master_Supplier extends \Model_Table
 {
 	public $table="companyERP_parties";
 	function init()
 	{
 		parent::init();
+		$this->hasOne('companyERP/Master_Suppliertype','suppliertype_id');
 		$this->addField('name');
-		$this->has
 		$this->add('dynamic_model/Controller_AutoCreator');
 		//$this->addHook('beforeSave',$this);
 	}

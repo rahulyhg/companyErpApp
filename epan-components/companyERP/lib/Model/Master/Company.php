@@ -9,7 +9,7 @@ class Model_Master_Company extends \Model_Table{
 		$this->hasMany('companyERP/Master_Branch','company_id');
 		$this->hasMany('companyERP/Master_Category','company_id');
 		$this->hasMany('companyERP/Master_Product','company_id');
-		$this->hasMany('companyERP/Master_Parties','company_id');
+		$this->hasMany('companyERP/Master_Supplier','company_id');
 		$this->hasMany('companyERP/Master_Transaction','company_id');
 		$this->addHook('beforeSave',$this);
 		$this->addHook('beforeDelete',$this);
