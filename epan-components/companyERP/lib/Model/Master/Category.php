@@ -8,7 +8,7 @@ class Model_Master_Category extends \Model_Table
 		parent::init();
 		$this->hasOne('companyERP/Master_Company','company_id');
 		$this->addField('name');
-		$this->hasMany('companyERP/Master_Item','item_id');
+		$this->hasMany('companyERP/Master_ItemGroup','item_id');
 		$this->add('dynamic_model/Controller_AutoCreator');
 		$this->addHook('beforeSave',$this);
 		$this->addHook('beforeDelete',$this);
@@ -33,7 +33,7 @@ class Model_Master_Category extends \Model_Table
 
 	function beforeDelete()
 	{
-		if($this->ref('companyERP/Master_Item')->count()->getOne()>0)
+		if($this->ref('companyERP/Master_ItemGroup')->count()->getOne()>0)
 {
 	throw $this->exception('plese delete Product content');
 	}

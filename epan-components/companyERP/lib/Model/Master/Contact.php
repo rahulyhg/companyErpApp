@@ -15,7 +15,21 @@ class Model_Master_Contact extends \Model_Table{
 		$this->addField('Mobile_no');
 		$this->add('dynamic_model/Controller_AutoCreator');
 		
-//		$this->addHook('beforeSave',$this);
+		$this->addHook('beforeSave',$this);
 //		$this->addHook('beforeDelete',$this);
+	}
+	function beforeSave(){
+		$contact=$this->add('companyERP/Model_Master_Contact');
+		if($this->loaded()){
+		$contact->addCondition('id','<>',$this->id);
+		}
+
+		$contact->addCondition('name',$this['name']);
+		$contact->tryLoadAny();
+
+		if($contact->loaded()){
+		throw $this->exception('its already exist');
+			}
+		
 	}
 }

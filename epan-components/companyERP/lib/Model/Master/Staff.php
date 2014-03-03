@@ -7,7 +7,13 @@ class Model_Master_Staff extends \Model_Table
 	{
 		parent::init();
 		$this->hasOne('companyERP/Master_Department','department_id');
-		$this->addField('name');
+		$this->hasOne('companyERP/Master_Post','post_id');
+		
+		$this->addField('name')->mandatory('can not be null');
+		$this->addField('category')->enum(array('Manager','Employee','Worker'))->mandatory('can not be null');
+		$this->addField('designation');
+		//$this->addField('is_active')->type('boolean');
+
 		$this->add('dynamic_model/Controller_AutoCreator');
 		$this->addHook('beforeSave',$this);
 	}

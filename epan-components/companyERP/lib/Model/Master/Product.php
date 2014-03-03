@@ -7,7 +7,7 @@ class Model_Master_Product extends \Model_Table
 	function init()
 	{
 		parent::init();
-		$this->hasOne('companyERP/Master_Category','category_id');
+		$this->hasOne('companyERP/Master_Company','company_id');
 		$this->addField('name');
 		$this->addField('unit');
 		$this->addField('quantity');
@@ -16,9 +16,10 @@ class Model_Master_Product extends \Model_Table
 		$this->addField('expire_date');
 		$this->addField('avilability_of_product');
 
-		$this->hasMany('companyERP/Master_Product_feature','product_id');
-		$this->hasMany('companyERP/Master_Itemproducts','product_id');
-		$this->hasMany('companyERP/Master_Product_Customer','product_id');
+		$this->hasMany('companyERP/Master_ProductFeature','product_id');
+		$this->hasMany('companyERP/Master_ItemProducts','product_id');
+		$this->hasMany('companyERP/Master_ProductCustomer','product_id');
+		// $this->hasMany('companyERP/Master_CustomerGroup','product_id');
 	
 		$this->add('dynamic_model/Controller_AutoCreator');
 		
@@ -44,17 +45,21 @@ class Model_Master_Product extends \Model_Table
 
 	function beforeDelete()
 	{
-		if($this->ref('companyERP/Master_Product_feature')->count()->getOne()>0)
+		if($this->ref('companyERP/Master_ProductFeature')->count()->getOne()>0)
       {
 	      
       	throw $this->exception('delete feature');
 	    //  $this->api->js()->univ()->errorMessage('plese delete features content');
 	  }
-	  if($this->ref('companyERP/Master_Itemdetail')->count()->getOne()>0)
+	  if($this->ref('companyERP/Master_ItemProducts')->count()->getOne()>0)
       {
 	      
       	throw $this->exception('delete item detail');
       }
-	    
+	   if($this->ref('companyERP/Master_ProductCustomer')->count()->getOne()>0)
+      {
+	      
+      	throw $this->exception('delete product customer detail');
+      } 
     }
 }

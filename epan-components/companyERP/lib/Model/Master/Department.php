@@ -11,7 +11,6 @@ class Model_Master_Department extends \Model_Table
 		$this->addField('name');
 
         $this->hasMany('companyERP/Master_Post','department_id');  
-        $this->hasMany('companyERP/Master_Companymember','department_id');  
 
 		$this->add('dynamic_model/Controller_AutoCreator');
 
@@ -37,11 +36,7 @@ class Model_Master_Department extends \Model_Table
 
 	function beforeDelete()
 	{
-		if($this->ref('companyERP/Master_Staff')->count()->getOne()>0)
-       {
-	        throw $this->exception('plese delete Staff contain');
-	    
-	    }   
+		
 
 	    if($this->ref('companyERP/Master_Post')->count()->getOne()>0)
        {

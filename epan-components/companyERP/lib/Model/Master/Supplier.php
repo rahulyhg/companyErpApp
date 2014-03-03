@@ -2,35 +2,39 @@
 namespace companyERP;
 class Model_Master_Supplier extends \Model_Table
 {
-	public $table="companyERP_parties";
+	public $table="companyERP_supplier";
 	function init()
 	{
 		parent::init();
-		$this->hasOne('companyERP/Master_Suppliertype','suppliertype_id');
+		$this->hasOne('companyERP/Master_SupplierType','suppliertype_id');
 		$this->addField('name');
+		$this->hasMany('companyERP/Master_Bill','supplier_id');
 		$this->add('dynamic_model/Controller_AutoCreator');
-		//$this->addHook('beforeSave',$this);
+		$this->addHook('beforeSave',$this);
+		$this->addHook('beforeDelete',$this);
 	}
-	/*function beforeSave
+	function beforeSave()
 	{
-		$parties=$this->add('Model_Master_parties');
-		if($this_loaded())
+		$supplier=$this->add('companyERP/Model_Master_Supplier');
+		if($this->loaded())
 		{
-			$parties->addCondition('id','<>',$this->id);
+			$supplier->addCondition('id','<>',$this->id);
 		}
-			$parties->addCondition('name',$this['name']);
-			$parties->tryloadAny();
-			if($parties->loaded())
+			$supplier->addCondition('name',$this['name']);
+			$supplier->tryloadAny();
+			if($supplier->loaded())
 			{
 				throw $this->exception('its already exist');
 			}
+		}
 
-	function beforeDelete()//modification remaining
+	function beforeDelete()
 	{
-		if($this->ref('Department')->count()->getOne)()>0)
-{
-	$this->api->js()->univ)()->errorMessage)('plese delete dept contain');
+		if($this->ref('companyERP/Model_Master_Bill')->count()->getOne()>0)
+       {
+	$this->api->js()->univ()->errorMessage('plese delete Bill content');
+	
+        }
 	}
-}*/
-		
-	}
+}	
+	

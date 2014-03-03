@@ -15,8 +15,21 @@ class Model_Master_Sales extends \Model_Table
 
         $this->addHook('beforeSave',$this);
 	}
-	function beforeSave()
-	{
+
+
+		function beforeSave(){
+		$sales=$this->add('companyERP/Model_Master_Sales');
+
+		if($this->loaded())
+		{
+			$sales->addCondition('id','<>',$this->id);
+		}
+			$sales->addCondition('name',$this['name']);
+			$sales->tryLoadAny();
+			if($sales->loaded())
+			{
+				throw $this->exception('its already exist');
+			}
 		
 	}
 }

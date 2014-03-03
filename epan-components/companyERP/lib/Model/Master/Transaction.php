@@ -7,7 +7,7 @@ class Model_Master_Transaction extends \Model_Table{
 		
 		$this->hasOne('companyERP/Master_Company','company_id');
 		$this->addField('name');
-		$this->addField('transaction_type')->enum(array('paymentpaid','paymentreceived'));
+		$this->addField('transaction_type')->enum(array('Paid','Recieived'));
 		$this->addField('transaction_date');
 		$this->addField('mode_of_transaction');
 		$this->addField('gross_amount');
@@ -18,5 +18,22 @@ class Model_Master_Transaction extends \Model_Table{
 		$this->addField('description');
 		$this->addField('status');
 		$this->add('dynamic_model/Controller_AutoCreator');
+
+		$this->addHook('beforeSave',$this);
 	}
+	function beforeSave(){
+		$transaction=$this->add('companyERP/Model_Master_Transaction');
+		if($this->loaded()){
+		$transaction->addCondition('id','<>',$this->id);
+		}
+
+		$transaction->addCondition('name',$this['name']);
+		$transaction->tryLoadAny();
+
+		if($transaction->loaded()){
+		throw $this->exception('its already exist');
+			}
+		
+	}
+
 }

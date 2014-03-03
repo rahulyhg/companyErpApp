@@ -1,6 +1,5 @@
 <?php
 namespace companyERP;
-
 class Model_Master_Purchase extends \Model_Table
 {
 	public $table="companyERP_purchase";
@@ -23,8 +22,19 @@ class Model_Master_Purchase extends \Model_Table
         $this->addHook('beforeSave',$this);
 	}
 
-	function beforeSave()
-	{
-		
-	}
+	function beforeSave(){
+                $purchase=$this->add('companyERP/Model_Master_Purchase');
+
+                if($this->loaded())
+                {
+                        $purchase->addCondition('id','<>',$this->id);
+                }
+                        $purchase->addCondition('name',$this['name']);
+                        $purchase->tryLoadAny();
+                        if($purchase->loaded())
+                        {
+                                throw $this->exception('its already exist');
+                        }
+                
+        }
 }

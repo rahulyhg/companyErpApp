@@ -7,7 +7,6 @@ class Model_Master_Branch extends \Model_Table{
 		$this->hasOne('companyERP/Master_Company','company_id');
 		$this->addField('name');
 		$this->hasMany('companyERP/Master_Department','branch_id');                                                                                              
-		$this->hasMany('companyERP/Master_Companymember','branch_id');                                                                                              
 		$this->add('dynamic_model/Controller_AutoCreator');
 		
 		$this->addHook('beforeSave',$this);
@@ -36,11 +35,7 @@ class Model_Master_Branch extends \Model_Table{
 	
        }
 
-       if($this->ref('companyERP/Master_Staff')->count()->getOne()>0)
-      {
-	   throw $this->exception('plese delete staff contain');
-	
-       }
+       
 
 
 
