@@ -12,7 +12,7 @@ class Model_Master_SupplierType extends \Model_Table{
 		$this->hasOne('companyERP/Master_Company','company_id')->defaultValue($company->id);
 
 		$this->addField('name');
-		$this->addField('category')->enum(array('Distributor','Wholesalers','Retailers');
+		$this->addField('category')->enum(array('Distributor','Wholesalers','Retailers'));
 
 
         $this->hasMany('companyERP/Master_Supplier','suppliertype_id');                                                                                              

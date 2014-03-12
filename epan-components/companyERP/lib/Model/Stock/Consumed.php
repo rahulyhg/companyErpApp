@@ -1,13 +1,14 @@
 <?php
 namespace companyERP;
-class Model_Inventory_Consumed extends \Model_Table{
+class Model_Stock_Consumed extends \Model_Table{
 	public $table="companyERP_consumed";
 	function init(){
 		parent::init();
-		
-		$this->addField('item_id');//foreign key in future
-		$this->addField('date');
+		 
+		$this->hasOne('companyERP/Master_Warehouse','warehouse_id');		
+		$this->hasOne('companyERP/Master_Item','item_id');		
 		$this->addField('qty');
+		$this->addField('date');
 		                                                                                             
 		$this->add('dynamic_model/Controller_AutoCreator');
 		
@@ -15,7 +16,7 @@ class Model_Inventory_Consumed extends \Model_Table{
 		//$this->addHook('beforeDelete',$this);
 	}
 	function beforeSave(){
-	 $consumed=$this->add('companyERP/Model_Inventory_Consumed');
+	 $consumed=$this->add('companyERP/Model_Stock_Consumed');
 		if($this->loaded())
 		{
 			$consumed->addCondition('id','<>',$this->id);

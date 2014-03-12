@@ -12,8 +12,11 @@ class page_companyERP_page_owner_main extends page_componentBase_page_owner_main
 		 $menu->addMenuItem('setup','Finance');
 		 $menu->addMenuItem('setup','Purchase');
 		 $menu->addMenuItem('companyERP_page_owner_sales','Sales');
+		 $menu->addMenuItem('companyERP_page_owner_manufacturing','Manufacturing');
 		 $menu->addMenuItem('companyERP_page_owner_inventory','Inventory');
 		 $menu->addMenuItem('setup','Reports');
 		 $menu->addMenuItem('companyERP_page_owner_setup','Setup');
 	}
 } 
+
+ 

@@ -14,11 +14,12 @@ class Model_Master_Product extends \Model_Table
 		$this->addField('weight');
 		$this->addField('packing_date');
 		$this->addField('expire_date');
-		$this->addField('avilability_of_product');
+		$this->addField('availability_of_product');
 
 		$this->hasMany('companyERP/Master_ProductFeature','product_id');
 		$this->hasMany('companyERP/Master_ItemProducts','product_id');
 		$this->hasMany('companyERP/Master_ProductCustomer','product_id');
+		$this->hasMany('companyERP/Master_Manufacturing','product_id');
 		// $this->hasMany('companyERP/Master_CustomerGroup','product_id');
 	
 		$this->add('dynamic_model/Controller_AutoCreator');
@@ -61,5 +62,11 @@ class Model_Master_Product extends \Model_Table
 	      
       	throw $this->exception('delete product customer detail');
       } 
+
+      if($this->ref('companyERP/Master_Manufacturing')->count()->getOne()>0)
+      {
+	      
+      	throw $this->exception('delete manufacturing detail');
+      }
     }
 }

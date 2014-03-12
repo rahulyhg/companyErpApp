@@ -216,9 +216,18 @@
 	"buffers":
 	[
 		{
+			"file": "/var/www/quiz/lib/Model/Course.php",
 			"settings":
 			{
-				"buffer_size": 0,
+				"buffer_size": 1192,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/var/www/quiz/page/course.php",
+			"settings":
+			{
+				"buffer_size": 2297,
 				"line_ending": "Unix"
 			}
 		}
@@ -254,6 +263,20 @@
 	},
 	"file_history":
 	[
+		"/home/vijay/Desktop/priyanka1/slide1.js",
+		"/home/vijay/Desktop/priyanka1/slide1.css",
+		"/home/vijay/Desktop/priyanka1/slide1.html",
+		"/var/www/companyErpApp/epan-components/companyERP/lib/Model/Master/Bill.php",
+		"/var/www/companyErpApp/epan-components/companyERP/lib/Model/Master/BillDetail.php",
+		"/var/www/companyErpApp/epan-components/companyERP/lib/Model/Inventory/Iteminward/Deliverynote.php",
+		"/var/www/companyErpApp/epan-components/companyERP/lib/Model/Inventory/Iteminward/Stockentry.php",
+		"/var/www/companyErpApp/epan-components/companyERP/lib/Model/Inventory/Iteminward/Materialreq.php",
+		"/var/www/companyErpApp/epan-components/companyERP/lib/Model/Inventory/Iteminward/Item.php",
+		"/home/vijay/Desktop/priyanka1/hair.css",
+		"/var/www/companyErpApp/epan-components/companyERP/page/owner/main.php",
+		"/var/www/companyErpApp/epan-components/companyERP/page/owner/setup.php",
+		"/var/www/companyErpApp/epan-components/companyERP/page/owner/customer.php",
+		"/home/vijay/Desktop/priyanka1/hair.html",
 		"/home/vijay/Desktop/priyanka1/sun1.css",
 		"/home/vijay/Desktop/priyanka1/sun1.html",
 		"/var/www/companyErpApp/epan-components/companyERP/lib/Model/Master/Category.php",
@@ -270,22 +293,17 @@
 		"/var/www/companyErpApp/epan-components/companyERP/page/owner/newsales.php",
 		"/var/www/companyErpApp/epan-components/companyERP/page/owner/showsales.php",
 		"/var/www/companyErpApp/epan-components/companyERP/page/owner/sales.php",
-		"/var/www/companyErpApp/epan-components/companyERP/page/owner/main.php",
 		"/var/www/companyErpApp/epan-components/companyERP/page/owner/newrecruit.php",
 		"/var/www/companyErpApp/epan-components/companyERP/lib/Model/Master/Staff.php",
 		"/var/www/companyErpApp/epan-components/companyERP/page/owner/humanresource.php",
 		"/var/www/companyErpApp/epan-components/companyERP/page/owner/newinventory.php",
-		"/var/www/companyErpApp/epan-components/companyERP/lib/Model/Master/Bill.php",
-		"/var/www/companyErpApp/epan-components/companyERP/lib/Model/Master/BillDetail.php",
 		"/var/www/companyErpApp/epan-components/companyERP/lib/Model/Master/Accounts.php",
-		"/var/www/companyErpApp/epan-components/companyERP/lib/Model/Inventory/Iteminward/Stockentry.php",
 		"/var/www/companyErpApp/epan-components/companyERP/page/owner/showrecruit.php",
 		"/var/www/companyErpApp/epan-components/companyERP/page/owner/showinventory.php",
 		"/var/www/companyErpApp/epan-components/companyERP/page/owner/inventory.php",
 		"/var/www/companyErpApp/epan-components/companyERP/page/owner/hrgroup.php",
 		"/var/www/companyErpApp/epan-components/companyERP/page/owner/leaveapplication.php",
 		"/var/www/companyErpApp/epan-components/companyERP/page/owner/accounts.php",
-		"/var/www/companyErpApp/epan-components/companyERP/page/owner/setup.php",
 		"/var/www/quiz/lib/Model/Exam.php",
 		"/var/www/quiz/page/course.php",
 		"/var/www/companyErpApp/epan-components/companyERP/lib/View/MyMenu.php",
@@ -372,16 +390,7 @@
 		"/var/www/school1/page/master.php",
 		"/var/www/school1/page/course.php",
 		"/var/www/school1/page/index.php",
-		"/var/www/school1/config-default.php",
-		"/var/www/school1/page/unit.php",
-		"/var/www/course2/page/index.php",
-		"/var/www/course2/config-default.php",
-		"/var/www/course/config-default.php",
-		"/var/www/course2/config-distrib.php",
-		"/var/www/course2/lib/Frontend.php",
-		"/var/www/course2/lib/Model/Course.php",
-		"/var/www/Demo/atk4-addons/dynamic_model/lib/Controller/AutoCreator.php",
-		"/var/www/Demo/lib/Model/Hotel.php"
+		"/var/www/school1/config-default.php"
 	],
 	"find":
 	{
@@ -473,15 +482,16 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
+					"file": "/var/www/quiz/lib/Model/Course.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 1192,
 						"regions":
 						{
 						},
@@ -494,7 +504,36 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 810.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/var/www/quiz/page/course.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2297,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								406,
+								406
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -631,6 +670,10 @@
 		"height": 500.0,
 		"selected_items":
 		[
+			[
+				"c",
+				"~/sublime-projects/companyERP.sublime-project"
+			],
 			[
 				"bii",
 				"~/Desktop/sublime-project/billing.sublime-project"

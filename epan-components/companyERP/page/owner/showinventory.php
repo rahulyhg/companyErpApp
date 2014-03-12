@@ -5,7 +5,7 @@ class page_companyERP_page_owner_showinventory extends page_companyERP_page_owne
 	{
 		parent::init();
 
-		$this->add('Grid')->setModel('companyERP/Inventory_Iteminward_Stockentry');
+		$this->add('Grid')->setModel('companyERP/Stock_Inward');
 			
 	}
 		

@@ -9,6 +9,7 @@ class Model_Master_Supplier extends \Model_Table
 		$this->hasOne('companyERP/Master_SupplierType','suppliertype_id');
 		$this->addField('name');
 		$this->hasMany('companyERP/Master_Bill','supplier_id');
+		$this->hasMany('companyERP/Stock_Inward','supplier_id');
 		$this->add('dynamic_model/Controller_AutoCreator');
 		$this->addHook('beforeSave',$this);
 		$this->addHook('beforeDelete',$this);

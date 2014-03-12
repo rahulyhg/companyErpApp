@@ -4,7 +4,7 @@ class Model_Master_Branch extends \Model_Table{
 	public $table="companyERP_branch";
 	function init(){
 		parent::init();
-		$this->hasOne('companyERP/Master_Company','company_id');
+		$this->hasOne('companyERP/Master_Company','company_id')->type('readonly');
 		$this->addField('name');
 		$this->hasMany('companyERP/Master_Department','branch_id');                                                                                              
 		$this->add('dynamic_model/Controller_AutoCreator');

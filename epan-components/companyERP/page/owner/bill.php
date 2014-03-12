@@ -10,4 +10,4 @@ class page_companyERP_page_owner_bill extends page_companyERP_page_owner_main {
 	}
 		//$this->add('CRUD')->setModel('companyERP/Master_Bill');
 		
-} w
+} 

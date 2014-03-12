@@ -4,7 +4,6 @@ class Model_Master_ItemGroup extends \Model_Table{
 	public $table="companyERP_itemgroup";
 	function init(){
 		parent::init();
-		// $this->hasOne('companyERP/Master_Category','category_id');
 		$this->addField('name');
 		$this->add('dynamic_model/Controller_AutoCreator');
 		

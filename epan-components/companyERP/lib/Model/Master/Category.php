@@ -8,7 +8,6 @@ class Model_Master_Category extends \Model_Table
 		parent::init();
 		$this->hasOne('companyERP/Master_Company','company_id');
 		$this->addField('name');
-		$this->hasMany('companyERP/Master_ItemGroup','item_id');
 		$this->add('dynamic_model/Controller_AutoCreator');
 		$this->addHook('beforeSave',$this);
 		$this->addHook('beforeDelete',$this);
