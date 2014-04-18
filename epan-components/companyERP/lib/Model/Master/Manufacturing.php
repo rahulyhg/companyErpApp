@@ -7,7 +7,7 @@ class Model_Master_Manufacturing extends \Model_Table
 	{
 		parent::init();
 
-		$this->hasOne('companyERP/Model_Master_Product','product_id');
+	//	$this->hasOne('companyERP/Model_Master_Product','product_id');
 
 		$this->addField('name')->mandatory('can not be null');
 

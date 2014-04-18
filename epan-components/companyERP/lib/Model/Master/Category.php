@@ -6,11 +6,15 @@ class Model_Master_Category extends \Model_Table
 	function init()
 	{
 		parent::init();
-		$this->hasOne('companyERP/Master_Company','company_id');
 		$this->addField('name');
+		$this->hasMany('companyERP/Master_Product','category_id');
 		$this->add('dynamic_model/Controller_AutoCreator');
 		$this->addHook('beforeSave',$this);
 		$this->addHook('beforeDelete',$this);
+		$this->addExpression('no_of_product')->set(function($m,$q)
+		 	{
+	 		return $m->refSQL('companyERP/Master_Product')->count();
+	 	});
 	}
 	function beforeSave()
 	{
@@ -32,9 +36,6 @@ class Model_Master_Category extends \Model_Table
 
 	function beforeDelete()
 	{
-		if($this->ref('companyERP/Master_ItemGroup')->count()->getOne()>0)
-{
-	throw $this->exception('plese delete Product content');
-	}
-}
+		
+    }
 }

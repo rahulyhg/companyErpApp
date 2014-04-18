@@ -9,7 +9,6 @@ class Model_Stock_Inward extends \Model_Table{
 		$this->hasOne('companyERP/Master_Warehouse','warehouse_id');	                                                                                             
 		$this->hasOne('companyERP/Master_Item','item_id');	                                                                                             
 
-		$this->addField('name');
 		$this->addField('qty');
 		$this->addField('date')->type('date');
 
@@ -25,8 +24,6 @@ class Model_Stock_Inward extends \Model_Table{
 		{
 			$inward->addCondition('id','<>',$this->id);
 		}
-			$inward->addCondition('name',$this['name']);
-			$inward->tryLoadAny();
 			if($inward->loaded())
 			{
 				throw $this->exception('its already exist');
@@ -38,7 +35,7 @@ class Model_Stock_Inward extends \Model_Table{
 	{
 		$this['supplier_id']=$inward_details['supplier_id'];
 		$this['warehouse_id']=$inward_details['warehouse_id'];
-		$this['name']=$inward_details['name'];
+		$this['item_id']=$inward_details['item_id'];
 		$this['qty']=$inward_details['qty'];
 		$this['date']=$inward_details['date'];
 

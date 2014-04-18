@@ -6,12 +6,13 @@ class page_companyERP_page_owner_inventory
 	{
   		 parent::init();
 
-         $menu=$this->add('companyERP/View_MyMenu');
-		 $menu->addMenuItem('companyERP_page_owner_inward','New Inventory');
-		 $menu->addMenuItem('companyERP_page_owner_showinventory','Show Inventory');
-		 $menu->addMenuItem('companyERP_page_owner_newwarehouse','New Warehouse');
-		 $menu->addMenuItem('companyERP_page_owner_showwarehouse','Show Warehouse');
-		 $menu->addMenuItem('companyERP_page_owner_product','Products');
+         $menu=$this->add('Menu');
+		 $menu->addMenuItem('companyERP_page_owner_category','Category');
+		 $menu->addMenuItem('companyERP_page_owner_party','Party');
+		 $menu->addMenuItem('companyERP_page_owner_bill','Sales Bill');
+		 $menu->addMenuItem('companyERP_page_owner_bill','Purchase Bill');
+		 $menu->addMenuItem('companyERP_page_owner_producttransaction','Product Transaction');
+		 $menu->addMenuItem('companyERP_page_owner_transaction','General Accounting');
 
 	}
 }	

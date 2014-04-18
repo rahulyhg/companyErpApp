@@ -7,7 +7,7 @@ class Model_Master_ItemProducts extends \Model_Table
 	{
 		parent::init();
 		$this->hasOne('companyERP/Master_Item','item_id');
-		$this->hasOne('companyERP/Master_Product','product_id');
+		//$this->hasOne('companyERP/Master_Product','product_id');
 		
 		$this->addField('name');
 		$this->addHook('beforeSave',$this);

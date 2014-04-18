@@ -5,7 +5,7 @@ class Model_Master_PaymentPaid extends Model_Master_Transaction{
 	function init(){
 		parent::init();
 
-		// $this->addCondition('Transaction_type','Paid');
+		$this->addCondition('transaction_type','Paid');
 
 		$this->addHook('beforeSave',$this);
 

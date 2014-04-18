@@ -7,7 +7,7 @@ class Model_Master_ProductFeature extends \Model_Table
 	function init()
 	{
 		parent::init();
-		$this->hasOne('companyERP/Master_Product','product_id');
+		//$this->hasOne('companyERP/Master_Product','product_id');
 		$this->addField('name');
 		$this->add('dynamic_model/Controller_AutoCreator');
 

@@ -6,8 +6,10 @@ class Model_Master_Supplier extends \Model_Table
 	function init()
 	{
 		parent::init();
-		$this->hasOne('companyERP/Master_SupplierType','suppliertype_id');
+	//	$this->hasOne('companyERP/Master_SupplierType','suppliertype_id');
 		$this->addField('name');
+		$this->addField('address');
+		$this->addField('contact_no');
 		$this->hasMany('companyERP/Master_Bill','supplier_id');
 		$this->hasMany('companyERP/Stock_Inward','supplier_id');
 		$this->add('dynamic_model/Controller_AutoCreator');

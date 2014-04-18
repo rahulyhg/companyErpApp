@@ -34,3 +34,56 @@
   ),
   'header' => false,
 ) 
+[Tue, 08 Apr 2014 09:14:19 +0400] UPLOAD: array (
+  'added' => 
+  array (
+    0 => 
+    array (
+      'mime' => 'image/jpeg',
+      'ts' => 1396934059,
+      'read' => 1,
+      'write' => 1,
+      'size' => 14775,
+      'hash' => 'l1_bG9nbzQuanBn',
+      'name' => 'logo4.jpg',
+      'phash' => 'l1_Lw',
+      'tmb' => 1,
+    ),
+  ),
+  'header' => false,
+) 
+[Tue, 08 Apr 2014 09:27:16 +0400] UPLOAD: array (
+  'added' => 
+  array (
+    0 => 
+    array (
+      'mime' => 'unknown',
+      'ts' => 1396934836,
+      'read' => 1,
+      'write' => 1,
+      'size' => 60927,
+      'hash' => 'l1_cGFydG5lcnNoaXA',
+      'name' => 'partnership',
+      'phash' => 'l1_Lw',
+    ),
+  ),
+  'header' => false,
+) 
+[Tue, 08 Apr 2014 09:28:29 +0400] UPLOAD: array (
+  'added' => 
+  array (
+    0 => 
+    array (
+      'mime' => 'image/jpeg',
+      'ts' => 1396934909,
+      'read' => 1,
+      'write' => 1,
+      'size' => 28297,
+      'hash' => 'l1_aHIxLmpwZw',
+      'name' => 'hr1.jpg',
+      'phash' => 'l1_Lw',
+      'tmb' => 1,
+    ),
+  ),
+  'header' => false,
+) 

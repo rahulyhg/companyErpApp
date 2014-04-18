@@ -10,6 +10,7 @@ class View_HR extends \View{
          $menu->addMenuItem('companyERP_page_owner_hrgroup','HR Group');
          $menu->addMenuItem('companyERP_page_owner_holidaylist','holidaylist');
          $menu->addMenuItem('companyERP_page_owner_leaveapplication','leave application');
+         $menu->addMenuItem('companyERP_page_owner_admindept','Add Department');
 
          $this->js(true)->hide();
 	}

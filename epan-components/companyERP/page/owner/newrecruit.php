@@ -1,5 +1,5 @@
 <?php
-class page_companyERP_page_owner_newrecruit extends page_companyERP_page_owner_home {
+class page_companyERP_page_owner_newrecruit extends page_companyERP_page_owner_humanresource {
      //main page extend problm.....tab redundancy 
 	function init()
 	{

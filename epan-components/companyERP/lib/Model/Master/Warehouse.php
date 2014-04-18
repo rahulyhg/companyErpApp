@@ -4,9 +4,12 @@ class Model_Master_Warehouse extends \Model_Table{
 	public $table="companyERP_warehouse";
 	function init(){
 		parent::init();
+
 		$this->addField('name');
+
 		$this->hasMany('companyERP/Stock_Inward','warehouse_id');
 		$this->hasMany('companyERP/Stock_Consumed','warehouse_id');
+		
 		$this->add('dynamic_model/Controller_AutoCreator');
 		
 		$this->addHook('beforeSave',$this);

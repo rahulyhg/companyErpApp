@@ -1,5 +1,5 @@
 <?php
-class page_companyERP_page_owner_adminstock extends page_companyERP_page_owner_home {
+class page_companyERP_page_owner_admindept extends page_companyERP_page_owner_home {
      //main page extend problm.....tab redundancy 
 	function init()
 	{
@@ -7,7 +7,7 @@ class page_companyERP_page_owner_adminstock extends page_companyERP_page_owner_h
 
 
 		$cr=$this->add('CRUD');
-		$cr->setModel('companyERP/Stock_Staff');
+		$cr->setModel('companyERP/Master_AdminDept');
 
 			
 	}

@@ -9,7 +9,6 @@ class Model_Master_Company extends \Model_Table{
 		$this->hasOne('Epan','epan_id')->defaultValue($this->api->current_website->id);
 		$this->addField('name')->mandatory('can not be null');
 		$this->hasMany('companyERP/Master_Branch','company_id');
-		$this->hasMany('companyERP/Master_Category','company_id');
 		$this->hasMany('companyERP/Master_Product','company_id');
 		$this->hasMany('companyERP/Master_SupplierType','company_id');
 		$this->hasMany('companyERP/Master_Transaction','company_id');

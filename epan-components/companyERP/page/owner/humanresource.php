@@ -5,9 +5,11 @@ class page_companyERP_page_owner_humanresource extends page_companyERP_page_owne
 	{
 		parent::init();
 
-		 $menu=$this->add('companyERP/View_MyMenu');
-		 $menu->addMenuItem('companyERP_page_owner_newrecruit','New Recruitment');
-		 $menu->addMenuItem('companyERP_page_owner_showrecruit','Show Recruiters');
+		 $menu=$this->add('Menu');
+		 $menu->addMenuItem('companyERP_page_owner_newrecruit','Add Staff');
+		 $menu->addMenuItem('companyERP_page_owner_showrecruit','Show Staff');
+		 $menu->addMenuItem('companyERP_page_owner_attendance','Add Attendance');
+		 $menu->addMenuItem('companyERP_page_owner_showattendance','Show Attendance');
 		 
 			
 	}

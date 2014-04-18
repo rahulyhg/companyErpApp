@@ -1,18 +1,23 @@
 <?php
 namespace companyERP;
 
-class Model_Master_Department extends \Model_Table
+class Model_Master_Department extends Model_Master_AdminDept
 {
-	public $table="companyERP_department";
+		//public $title_field='name';  // name of descriptive field. If not defined, will use table+'#'+id
+	//public $table="companyERP_department";
+	// public $title_field="dept_no";
 	function init()
 	{
 		parent::init();
-		$this->hasOne('companyERP/Master_Branch','branch_id');
-		$this->addField('name');
 
-        $this->hasMany('companyERP/Master_Post','department_id');  
+		//$this->hasOne('companyERP/Master_Branch','branch_id');
+		//$this->addField('dept_no');
+		//$this->addField('dept_name');
+		// $this->hasOne('companyERP/Master_AdminDept','admindept_id');
+       // $this->hasMany('companyERP/Master_Post','department_id');  
+        $this->hasMany('companyERP/Master_Staff','department_id');  
 
-		$this->add('dynamic_model/Controller_AutoCreator');
+		//$this->add('dynamic_model/Controller_AutoCreator');
 
 		$this->addHook('beforeSave',$this);
 		$this->addHook('beforeDelete',$this);
